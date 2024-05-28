@@ -1,0 +1,413 @@
+@font-face {
+    font-family: neue medium;
+    src: url(../font/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family: neue bold;
+    src: url(../font/PPNeueMontreal-Bold.otf);
+}
+@font-face {
+    font-family: brookline;
+    src: url(../font/Brookline.ttf);
+}
+
+@font-face {
+    font-family: verona;
+    src: url(../font/Verona-Serial-Medium\ Regular.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #f3e8d7;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #f3e8d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo
+{
+    width: 70px;
+    height: 70px;
+}
+
+.logo img
+{
+    width: 80px;
+    height: 80px; 
+}
+
+.navbar a
+{
+    position: relative;
+    font-size: 20px;
+    color: #2552a3;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "neue medium";
+    margin-left: 40px;
+}
+
+.navbar a::before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2552a3;
+    transition: .3s;
+}
+
+.navbar a:hover::before
+{
+    width: 100%;
+}
+
+
+.exars
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.exars .h1
+{
+    position: relative;
+    font-family: "verona";
+    font-size: 32vw;
+    color: #2552a3;
+    line-height: 1.125;
+}
+
+.exarstext
+{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.crew
+{
+    text-align: center;
+    color: #2552a3;
+    font-size: 6vw;
+    margin-top: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.introduction
+{   
+    text-align: center;
+    color: #2552a3;
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero
+{
+    position: relative;
+    width: calc(100vw - 4em);
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 4px solid #2552a3;
+}
+
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: bottom;
+    height: 100vh;
+    align-items: bottom;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+
+.card  
+{
+    height: 350px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgb(255, 152, 178);
+    overflow: hidden;
+}
+
+.card img .aryaimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .ayeshaimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .bagasimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .annisaimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .hafizhimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.intro1
+{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: #3fba9e;
+    color: white;
+}
+.intro2
+{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: #fa8eb6;
+    color: white;
+}
+.intro3
+{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: #b2c8df;
+    color: white;
+}
+.intro4
+{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: #f0c20a;
+    color: white;
+}
+.intro5
+{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: #ed583f;
+    color: white;
+}
+
+h1
+{
+    margin: 10px;
+    margin-top: 2px ;
+    margin-left: 2px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2
+{
+    margin:5px;
+    margin-top: 0,1px ;
+    margin-left: 2px;
+    font-size: 15px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.Arya
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Ayesha
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Bagas
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Annisa
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Hafizh
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+.card:hover
+{
+    cursor: pointer;
+}
+
+.card:hover .intro1
+{
+    height: 220PX;
+    bottom: 200px;
+    background-color: #3fba9e;
+    transition: 190ms ease-in-out;
+}
+
+.card:hover .intro2
+{
+    height: 220PX;
+    bottom: 170px;
+    background-color: #fa8eb6;
+    transition: 190ms ease-in-out;
+}
+
+.card:hover .intro3
+{
+    height: 220PX;
+    bottom: 200px;
+    background-color: #b2c8df;
+    transition: 190ms ease-in-out;
+}
+.card:hover .intro4
+{
+    height: 220PX;
+    bottom: 170px;
+    background-color: #f0c20a;
+    transition: 190ms ease-in-out;
+}
+.card:hover .intro5
+{
+    height: 220PX;
+    bottom: 200px;
+    background-color: #ed583f;
+    transition: 190ms ease-in-out;
+}
+
+.card:hover p
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img 
+{
+    transform:scale(1.1)rotate(-3deg)
+
+}
+
+.footer
+{
+
+    padding: 30px 100px;
+    background-color: #2552a3;
+    align-items: center;
+}
+
+.footer p
+{
+    font-family: "Brookline";
+    font-size: 42px;
+    color: #f3e8d7;
+}
