@@ -28,45 +28,17 @@ html, body
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    background-color: #F0C9BA;
-}
-
-
-.overlay{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
-    display: flex;
-}
-
-.bar{
-    width: 10vw;
-    height: 105vh;
-    background: #C64E2F;
-}
-
-.counter{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    justify-items: flex-end;
-    z-index: 10000;
-    color: #f0c9ba;
-    padding: 4em 0.4em;
-    font-size: 10vw;
-    font-family: verona;
+    background-color: #f3e8d7;
 }
 
 .header
 {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color: #F0C9BA;
+    background-color: #f3e8d7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +61,7 @@ html, body
 {
     position: relative;
     font-size: 20px;
-    color: #C64E2F;
+    color: #2552a3;
     text-decoration: none;
     font-weight: 500;
     font-family: "neue medium";
@@ -104,7 +76,7 @@ html, body
     left: 0;
     width: 0;
     height: 2px;
-    background: #C64E2F;
+    background: #2552a3;
     transition: .3s;
 }
 
@@ -119,36 +91,15 @@ html, body
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 4em;
-    padding-bottom: 0;
-}
-
-
-.karta{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 4em;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-.karta .h1
-{
-    position: relative;
-    font-family: verona;
-    font-size: 16vh;
-    padding-top: 0;
-    padding-bottom: 50px;
-    align-items: right;
-    
+    padding: 2em;
 }
 
 .exars .h1
 {
     position: relative;
-    font-family: verona;
-    font-size: 28vw;
-    color: #C64E2F;
+    font-family: "verona";
+    font-size: 32vw;
+    color: #2552a3;
     line-height: 1.125;
 }
 
@@ -157,15 +108,25 @@ html, body
     margin-top: 5px;
     text-align: center;
     font-size: 6vw;
-    font-family: verona;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.crew
+{
+    text-align: center;
+    color: #2552a3;
+    font-size: 6vw;
+    margin-top: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .introduction
 {   
-    text-align: left;
-    color: #C64E2F;
+    text-align: center;
+    color: #2552a3;
     font-size: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hero
@@ -173,30 +134,11 @@ html, body
     position: relative;
     width: calc(100vw - 4em);
     height: 100%;
-    margin-top: 100px;
     margin: 0 auto;
     border-radius: 10px;
-    border: 4px solid #C86A58;
+    border: 4px solid #2552a3;
 }
 
-.border
-{
-    position: relative;
-    width: 30vw;
-    height: 50%;
-    margin-top: 10px;
-    margin-right: 100px;
-    margin-left: 12px;
-    border-radius: 10px;
-    border: 4px solid #C86A58;
-    float: right;
-}
-
-.border img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
 
 img
 {
@@ -216,124 +158,250 @@ img
     margin-top: 100px;
 }
 
-.sejarah h1
+.card  
 {
+    height: 350px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgb(255, 152, 178);
+    overflow: hidden;
+}
+
+.card img .aryaimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .ayeshaimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .bagasimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .annisaimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.card img .hafizhimg
+{ 
+    height: 350px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.intro1
+{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
     position: relative;
-    font-family: verona;
-    font-size: 6vw;
-    color: #C64E2F;
-    line-height: 1.125;
-    padding: 12vh;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    bottom: 100px;
+    background: #3fba9e;
+    color: white;
 }
-
-.sejarah p{
-    text-align: left;
-    color: #C86A58;
-    font-size: 23px;
-    font-family: neue medium;
-    padding: 12vh;
-    padding-top: 0;
-    padding-bottom: 21px;
-    padding-right: 12px;
-}
-.ciri h1
+.intro2
 {
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
     position: relative;
-    font-family: verona;
-    font-size: 6vw;
-    color: #C64E2F;
-    line-height: 1.125;
-    padding: 12vh;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    bottom: 100px;
+    background: #fa8eb6;
+    color: white;
 }
-
-.ciri p{
-    text-align: left;
-    color: #C86A58;
-    font-size: 23px;
-    font-family: neue medium;
-    padding: 12vh;
-    padding-top: 0;
-    padding-bottom: 21px;
-    margin-right: 50px;
-}
-
-.sdg
+.intro3
 {
-    padding-bottom: 100px;
-}
-
-.sdg h1
-{
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
     position: relative;
-    font-family: verona;
-    font-size: 6vw;
-    color: #C64E2F;
-    line-height: 1.125;
-    padding: 12vh;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    bottom: 100px;
+    background: #b2c8df;
+    color: white;
 }
-
-.sdg p{
-    text-align: left;
-    color: #C86A58;
-    font-size: 23px;
-    font-family: neue medium;
-    padding: 12vh;
-    padding-top: 0;
-    padding-bottom: 21px;
-    margin-right: 50px;
-}
-
-
-.bordersdg8
+.intro4
 {
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
     position: relative;
-    width: 25vw;
-    height: 45vw;
-    margin-top: 10px;
-    margin-right: 100px;
-    margin-left: 50px;
-    border-radius: 10px;
-    border: 4px solid #C86A58;
-    float: left;    
+    bottom: 100px;
+    background: #f0c20a;
+    color: white;
 }
-
-.bordersdg8 img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.introduction p
+.intro5
 {
-    text-align: left;
-    color: #C86A58;
-    font-size: 23px;
-    font-family: neue medium;
-    padding: 12vh;
-    padding-top: 0;
-    padding-bottom: 21px;
+    height: 350px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    background: #ed583f;
+    color: white;
+}
+
+h1
+{
+    margin: 10px;
+    margin-top: 2px ;
+    margin-left: 2px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2
 {
     margin:5px;
     margin-top: 0,1px ;
-    margin-left: 20px;
+    margin-left: 2px;
     font-size: 15px ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+
+.Arya
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Ayesha
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Bagas
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Annisa
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Hafizh
+{
+    font-size: 13px;
+    margin: 10px;
+    margin-left: 2px;
+    visibility: hidden;
+    line-height: 5px;
+    opacity:0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+.card:hover
+{
+    cursor: pointer;
+}
+
+.card:hover .intro1
+{
+    height: 220PX;
+    bottom: 200px;
+    background-color: #3fba9e;
+    transition: 190ms ease-in-out;
+}
+
+.card:hover .intro2
+{
+    height: 220PX;
+    bottom: 170px;
+    background-color: #fa8eb6;
+    transition: 190ms ease-in-out;
+}
+
+.card:hover .intro3
+{
+    height: 220PX;
+    bottom: 200px;
+    background-color: #b2c8df;
+    transition: 190ms ease-in-out;
+}
+.card:hover .intro4
+{
+    height: 220PX;
+    bottom: 170px;
+    background-color: #f0c20a;
+    transition: 190ms ease-in-out;
+}
+.card:hover .intro5
+{
+    height: 220PX;
+    bottom: 200px;
+    background-color: #ed583f;
+    transition: 190ms ease-in-out;
+}
+
+.card:hover p
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img 
+{
+    transform:scale(1.1)rotate(-3deg)
+
+}
+
 .footer
 {
-    padding-top: 30px;
+
     padding: 30px 100px;
-    background-color: #C64E2F;
+    background-color: #2552a3;
     align-items: center;
 }
 
@@ -341,30 +409,5 @@ h2
 {
     font-family: "Brookline";
     font-size: 42px;
-    color: #F0C9BA;
-}
-
-a
-{
-    position: relative;
-    font-size: 20px;
-    color: #C64E2F;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: "neue bold";
-}
-a::before
-{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #C64E2F;
-    transition: .3s;
-}
-a:hover::after
-{
-    width: 100%;
+    color: #f3e8d7;
 }
